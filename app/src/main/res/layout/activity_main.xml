@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.farazpcir.masoud.MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:id="@+id/linearLayout"
+        android:foregroundGravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="150dip"
+            android:layout_height="40dip"
+            android:id="@+id/textView"
+            android:layout_margin="2dip"
+            android:gravity="center"
+            android:textColor="@color/material_deep_teal_500"
+            android:text="مکان های تفریحی مشهد"
+            android:textStyle="bold"
+            android:elevation="2dip"/>
+
+    </LinearLayout>
+
+    <com.example.farazpcir.masoud.Custom_ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="150dip"
+        android:inAnimation="@android:anim/slide_in_left"
+        android:outAnimation="@android:anim/slide_out_right"
+        android:flipInterval="3000"
+        android:autoStart="true"
+        android:id="@+id/vf"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp">
+
+
+
+    </com.example.farazpcir.masoud.Custom_ViewFlipper>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="350dip"
+        android:layout_height="80dip"
+        android:layout_marginTop="250dip">
+        <ImageView
+            android:layout_width="110dip"
+            android:layout_height="match_parent"
+            android:src="@drawable/shoping"
+            android:id="@+id/shop"/>
+        <TextView
+            android:layout_width="160dip"
+            android:layout_height="match_parent"
+            android:text="مراکز خرید"
+            android:textColor="@color/abc_search_url_text"
+            android:gravity="center"
+            android:layout_marginLeft="45dip"
+            android:textStyle="bold"
+            android:elevation="2dip"
+            android:id="@+id/shopcenter"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dip"
+        android:layout_marginTop="330dip"
+        >
+        <ImageView
+            android:layout_width="110dip"
+            android:layout_height="match_parent"
+            android:src="@drawable/resturant"
+            android:id="@+id/resturan"/>
+        <TextView
+            android:layout_width="160dip"
+            android:layout_height="match_parent"
+            android:text="رستوران ها "
+            android:gravity="center"
+            android:textColor="@color/abc_search_url_text"
+            android:layout_marginLeft="45dip"
+            android:textStyle="bold"
+            android:elevation="2dip"
+            android:id="@+id/restan"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="410dip">
+        <ImageView
+            android:layout_width="110dip"
+            android:layout_height="match_parent"
+            android:src="@drawable/hotel"
+            android:id="@+id/hotel"/>
+        <TextView
+            android:layout_width="160dip"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/abc_search_url_text"
+            android:text="درباره هتل ما"
+            android:layout_marginLeft="45dip"
+            android:textStyle="bold"
+            android:elevation="2dip"
+            android:id="@+id/abouthotel"/>
+    </LinearLayout>
+
+</RelativeLayout>
